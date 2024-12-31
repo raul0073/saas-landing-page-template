@@ -15,7 +15,7 @@ export default function Navbar() {
   const [isMobileMenuOn, setIsMobileMenuOn] = useState<boolean>(false);
 
   return (
-    <section className="w-full py-2 md:py-4 px-2 md:px-6 relative">
+    <header className="w-full py-2 md:py-4 px-2 md:px-6 relative">
       <div
         className={`${isMobileMenuOn && "hidden"} container max-w-5xl mx-auto rounded-full py-2 px-4 md:pr-2 items-center ${
           hasScrolled && screenLg ? "scrolledNav" : ""
@@ -58,6 +58,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 }

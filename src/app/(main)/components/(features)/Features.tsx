@@ -55,10 +55,10 @@ export const amazingAnalytics = {
 	],
 };
 
-export function Features() {
+export default function Features() {
 	return (
 		<section
-			className="introduction w-full h-fit py-24 px-4 relative"
+			className="features w-full h-fit py-24 px-4 relative"
 			id="about">
 			<div className="container mx-auto">
 				<div className="mb-24 overflow-hidden">

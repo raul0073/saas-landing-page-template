@@ -1,24 +1,46 @@
+import dynamic from "next/dynamic";
 import { Fragment } from "react";
-import FAQ from "./components/(faq)/FAQ";
 import Contact from "./components/(contact)/Contact";
-import Coops from "./components/(coops)/Coops";
-import { Features } from "./components/(features)/Features";
+import FAQ from "./components/(faq)/FAQ";
 import { Hero } from "./components/(hero)/Hero";
 import { TabletParallax } from "./components/(parallax)/Parallax";
 import Pricing from "./components/(pricinig)/Pricing";
-import { Services } from "./components/(services)/Services";
-import Testimonials from "./components/(testimonials)/Testimonials";
+
+const DynamicFeatures = dynamic(
+	() => import("@/./app/(main)/components/(features)/Features"),
+	{
+		loading: () => <div>Loading...</div>,
+	}
+);
+const DynamicServices = dynamic(
+	() => import("@/./app/(main)/components/(services)/Services"),
+	{
+		loading: () => <div>Loading...</div>,
+	}
+);
+const DynamicTestimonials = dynamic(
+	() => import("@/./app/(main)/components/(testimonials)/Testimonials"),
+	{
+		loading: () => <div>Loading...</div>,
+	}
+);
+const DynamicCoops = dynamic(
+	() => import("@/./app/(main)/components/(coops)/Coops"),
+	{
+		loading: () => <div>Loading...</div>,
+	}
+);
 
 export default function Home() {
 	return (
 		<Fragment>
 			<Hero />
 			<TabletParallax />
-			<Features />
-			<Services />
-			<Testimonials />
+			<DynamicFeatures />
+			<DynamicServices />
+			<DynamicTestimonials />
 			<Pricing />
-			<Coops />
+			<DynamicCoops />
 			<FAQ />
 			<Contact />
 		</Fragment>

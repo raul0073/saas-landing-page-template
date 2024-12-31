@@ -5,7 +5,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 This project is a modern, responsive landing page for a SaaS product built using **Next.js**, **React**, **ShadCN UI**, **Aceternity UI**, and **Framer Motion**. It features a dark color scheme and smooth animations to create an engaging user experience.
 
-Check out the live demo: [Demo Link](https://rmstudio.vercel.app)
+Check out the live demo: ## [Demo Link](https://rms-demo.vercel.app/)
+
+![Alt Text]("./public/captures/full_page_capture.png")
+
 
 ## Features
 

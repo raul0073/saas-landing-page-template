@@ -6,7 +6,7 @@ import { TESTIMONIALS } from "./constants/labels";
 
 function Testimonials() {
 	return (
-		<section className="coops  min-h-screen bg-white relative overflow-clip">
+		<section className="testimonials  min-h-screen bg-white relative overflow-clip">
 			<div className="absolute w-40 lg:w-[40rem] h-96 -top-24 right-[50%] translate-x-[50%] bg-gradient-to-t from-[#8779ff] to-[#2cff36] blur-3xl  rounded-full opacity-20"></div>
 			<div className="container py-20 md:py-40 mx-auto">
 				<div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">

@@ -5,7 +5,7 @@ import SaasGrid from "./components/SaasGrid";
 import WebsitesGrid from "./components/WebsitesGrid";
 
 
-export function Services() {
+export default function Services() {
 	const data = [
 		{
 			title: <TextGenerateEffect words="Websites" />,

@@ -7,7 +7,7 @@ const transition = { duration: 0.6, ease: "easeInOut" };
 
 export function Hero() {
 	return (
-		<section className="pt-24 px-4 pb-24">
+		<section className="hero pt-24 px-4 pb-24">
 			<div className="container mx-auto relative">
 				<div className="flex justify-center ml-[40%] promo">
 					<div className="inline-flex py-1 text-xs md:text-sm md:px-4 px-2 bg-gradient-to-t from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold capitalize">

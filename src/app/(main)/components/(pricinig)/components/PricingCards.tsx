@@ -77,7 +77,7 @@ export function PricingCard({ plan, isMonthView, primary }: PricingCardProps) {
 										strokeWidth="1"
 										fill="#424242"
 										className="z-30"
-										fill-rule="evenodd">
+										fillRule="evenodd">
 										<g
 											id="Icon-Set"
 											transform="translate(-308.000000, -1087.000000)"
