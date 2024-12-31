@@ -1,15 +1,15 @@
 "use client";
-import Marquee from "@/components/Marquee";
+import Marquee from "@/app/(main)/components/(coops)/components/Marquee";
 import Image, { StaticImageData } from "next/image";
 import { HTMLAttributes } from "react";
-import { coopsList } from "../../(coops)/Coops";
 import { cn } from "@/lib/utils";
+import { coopsList } from "../constants/data";
 
-interface TestimonialCardProps extends HTMLAttributes<HTMLElement> {
+interface CoopsCardProps extends HTMLAttributes<HTMLElement> {
 	logo: StaticImageData;
 	name: string;
 }
-const TestimonialCard = ({ logo, name, ...props }: TestimonialCardProps) => {
+const CoopsCard = ({ logo, name, ...props }: CoopsCardProps) => {
 	return (
 		<figure
 		{...props}
@@ -30,14 +30,14 @@ const TestimonialCard = ({ logo, name, ...props }: TestimonialCardProps) => {
 	);
 };
 
-const TestimonialsMarquee = () => {
+const CoopsMarquee = () => {
 	return (
 		<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-transparent py-20 md:shadow-xl">
 			<Marquee pauseOnHover className="[--duration:20s]">
-				{coopsList.map((testimonial, index) => (
-					<TestimonialCard
+				{coopsList.map((comp, index: number) => (
+					<CoopsCard
 						key={index}
-						{...testimonial}
+						{...comp}
 						className="marquee-item shrink-0" 
 					/>
 				))}
@@ -48,4 +48,4 @@ const TestimonialsMarquee = () => {
 	);
 };
 
-export default TestimonialsMarquee;
+export default CoopsMarquee;

@@ -37,7 +37,7 @@ Follow these steps to set up the project locally on your machine.
 Clone the repository to your local machine
 
 bash
-git clone https://github.com/raul0073/Saas-Landing-Page-Template-Dark-Colors.git
+git clone https://github.com/raul0073/saas-landing-page-template.git
 
 ## 2. Install Dependencies
 
@@ -79,4 +79,5 @@ yarn dev
 
 bun dev
 
-Now open http://localhost:3000 in your browser to view the application. The page will automatically update as you make changes to the code.
+
+Now open http://localhost:3000 in your browser.

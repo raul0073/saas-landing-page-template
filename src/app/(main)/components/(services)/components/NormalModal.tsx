@@ -10,7 +10,10 @@ import { ArrowRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-import { AnimatedTestimonials, Testimonial } from "./ui/animated-testimonials";
+import {
+	AnimatedTestimonials,
+	Testimonial,
+} from "../../../../../components/ui/animated-testimonials";
 
 type LandingPageDialogCompProps = {
 	imgSrc: StaticImageData;

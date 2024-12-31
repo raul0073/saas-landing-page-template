@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { Fragment } from "react";
 import Contact from "./components/(contact)/Contact";
-import FAQ from "./components/(faq)/FAQ";
+import FAQComp from "./components/(faq)/FAQ";
 import { Hero } from "./components/(hero)/Hero";
 import { TabletParallax } from "./components/(parallax)/Parallax";
 import Pricing from "./components/(pricinig)/Pricing";
@@ -41,7 +41,7 @@ export default function Home() {
 			<DynamicTestimonials />
 			<Pricing />
 			<DynamicCoops />
-			<FAQ />
+			<FAQComp />
 			<Contact />
 		</Fragment>
 	);

@@ -1,11 +1,10 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 // Font-face for custom "AxureHandwriting" font
 @font-face {
-	font-family: "AxureHandwriting";  // Custom font name
+	font-family: "AxureHandwriting"; // Custom font name
 	src: url("https://db.onlinewebfonts.com/t/7f68a670100a48f475fc330a0eb0cc92.eot");
 	src: url("https://db.onlinewebfonts.com/t/7f68a670100a48f475fc330a0eb0cc92.eot?#iefix")
 			format("embedded-opentype"),
@@ -21,23 +20,22 @@
 
 // Custom class for applying "AxureHandwriting" font
 .handwritingFont {
-	font-family: "AxureHandwriting";  // Use the custom font
+	font-family: "AxureHandwriting"; // Use the custom font
 }
 
 // Body styling - applies font and hides horizontal overflow
 body {
-	font-family: Arial, Helvetica, sans-serif;  
-	@apply overflow-x-hidden;  // Prevent horizontal scrolling
+	font-family: Arial, Helvetica, sans-serif;
+	@apply overflow-x-hidden; // Prevent horizontal scrolling
 }
-
 
 @layer utilities {
 	.text-balance {
-		text-wrap: balance;  // Applies text wrapping balance
+		text-wrap: balance; // Applies text wrapping balance
 	}
 }
 
-// Base layer - Defines root-level color variables Shadcn UI theme and colors 
+// Base layer - Defines root-level color variables Shadcn UI theme and colors
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -95,54 +93,51 @@ body {
 	}
 }
 
-
 @layer base {
 	* {
-		@apply border-border;  // Apply border color to all elements
+		@apply border-border; // Apply border color to all elements
 	}
 
-	
 	body {
-		@apply bg-background text-foreground;  // Use background and foreground colors
+		@apply bg-background text-foreground; // Use background and foreground colors
 	}
 }
 
-
-
 // Styling for fixed container navigation
 div.container.scrolledNav {
-	position: fixed;  // Fixed position for the navigation container
-	top: 15px;  // Set top position
-	left: 50%;  // Center horizontally
-	transform: translateX(-50%);  // Apply translation for proper centering
-	background-color: rgba(0, 0, 0, 0.800);  // Semi-transparent background
-	backdrop-filter: blur(10px);  // Apply blur effect to background
-	border: 1px solid rgba(207, 207, 207, 0.103);  //  border color
-	margin: 0 auto;  // Center margin
-	z-index: 100;  // Set high stacking order
-	width: 90%;  // Set container width
-	animation: scroll 0.4s ease-in-out;  // Apply scroll animation
-	
+	position: fixed; // Fixed position for the navigation container
+	top: 15px; // Set top position
+	left: 50%; // Center horizontally
+	transform: translateX(-50%); // Apply translation for proper centering
+	background-color: rgba(0, 0, 0, 0.8); // Semi-transparent background
+	backdrop-filter: blur(10px); // Apply blur effect to background
+	border: 1px solid rgba(207, 207, 207, 0.103); //  border color
+	margin: 0 auto; // Center margin
+	z-index: 100; // Set high stacking order
+	width: 90%; // Set container width
+	animation: scroll 0.4s ease-in-out; // Apply scroll animation
+
 	@keyframes scroll {
 		from {
-			top: -100px;  // Start from above the viewport
+			top: -100px; // Start from above the viewport
 		}
 		to {
-			top: 15px;  // End at 15px from the top
+			top: 15px; // End at 15px from the top
 		}
 	}
 }
 
 // Parallax background styling for contact section
 .contact-art-parallax {
-	background-image: url('./../../public/images/bg/pexels-pixabay-159574.jpg');  // Background image
-	background-size: cover;  // Cover the container with the image
-	background-position: center;  // Center the background image
-	background-repeat: no-repeat;  // Prevent image tiling
-	background-attachment: fixed;  // Enable parallax effect
-	height: inherit;  // Inherit the height
-	width: 100%;  // Full width
-	display: flex;  // Use flexbox for centering
-	justify-content: center;  // Center horizontally
-	align-items: center;  // Center vertically
+	background-image: url("./../../public/images/bg/pexels-pixabay-159574.jpg"); // Background image
+	background-size: cover; // Cover the container with the image
+	background-position: center; // Center the background image
+	background-repeat: no-repeat; // Prevent image tiling
+	background-attachment: fixed; // Enable parallax effect
+	height: inherit; // Inherit the height
+	width: 100%; // Full width
+	display: flex; // Use flexbox for centering
+	justify-content: center; // Center horizontally
+	align-items: center; // Center vertically
 }
+

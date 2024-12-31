@@ -1,4 +1,4 @@
-import { SaasPageDialogComp } from "@/components/NormalModal";
+import { SaasPageDialogComp } from "@/app/(main)/components/(services)/components/NormalModal";
 import { SaasType, sassList } from "../constants/constants";
 
 function SaasGrid() {

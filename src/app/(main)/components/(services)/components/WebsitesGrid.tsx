@@ -1,4 +1,4 @@
-import { LandingPageDialogComp } from "@/components/NormalModal";
+import { LandingPageDialogComp } from "@/app/(main)/components/(services)/components/NormalModal";
 import { websitesList, WebsiteType } from "../constants/constants";
 
 function WebsitesGrid() {

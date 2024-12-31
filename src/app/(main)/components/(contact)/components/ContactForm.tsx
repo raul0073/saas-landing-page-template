@@ -13,7 +13,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { forwardRef, useImperativeHandle } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { contactSchema } from "./contactSchema";
+import { contactSchema } from "../schema/contactSchema";
 
 const ContactForm = forwardRef(function ContactForm(_, ref) {
 	const form = useForm<z.infer<typeof contactSchema>>({

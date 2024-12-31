@@ -2,7 +2,7 @@
 import { SERVICES } from "@/app/(main)/components/(services)/constants/labels";
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { ReactNode, useEffect, useRef, useState } from "react";
-import Tag from "../Tag";
+import Tag from "../../app/(main)/components/(features)/components/Tag";
 interface TimelineEntry {
 	title: ReactNode;
 	content: React.ReactNode;
