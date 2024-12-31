@@ -17,6 +17,7 @@
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@tabler/icons-react": "^3.24.0",
+    "@vercel/speed-insights": "^1.1.0",
     "add": "^2.0.6",
     "autoprefixer": "^10.4.20",
     "button": "^1.1.1",
