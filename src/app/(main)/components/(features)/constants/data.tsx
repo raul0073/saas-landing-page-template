@@ -14,8 +14,6 @@ type FeatureCardType = {
 	title: string;
 };
 interface FeatureCardsType {
-	tagline: string;
-	description: string;
 	features: FeatureCardType[];
 }
 const iconClassName = "w-5 h-auto text-lime-400 saturate-200";
@@ -23,9 +21,6 @@ const iconClassName = "w-5 h-auto text-lime-400 saturate-200";
 
 
 export const featuresCards: FeatureCardsType = {
-	tagline: "Amazing Analytics you will never ever use.",
-	description:
-		"Just like any other analytics tool, you will never use all the features. But we have them all just in case you needed some of them.",
 	features: [
 		{
 			title: "Charts, graphs, and everything at your fingertips",
@@ -36,7 +31,7 @@ export const featuresCards: FeatureCardsType = {
 		{
 			title: "Create teams. Invite colleagues.",
 			description:
-				"Creation of teams is a breeze. Invite your colleagues to Render Metrics Labs so that they can bang their head against a pie chart too.",
+				"Creation of teams is a breeze. Invite your colleagues to Render Metrics Studio so that they can bang their head against a scatter graph too.",
 			icon: <Users className={iconClassName} />,
 		},
 		{
@@ -48,7 +43,7 @@ export const featuresCards: FeatureCardsType = {
 		{
 			title: "We don't track you. We don't sell your data.",
 			description:
-				"Lol. We don't even have a database. It is all written on papers here somewhere. wink wink.",
+				"Lol.",
 			icon: <Server className={iconClassName} />,
 		},
 		{

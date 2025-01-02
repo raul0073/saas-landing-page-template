@@ -7,7 +7,7 @@ This project is a modern, responsive landing page for a SaaS product built using
 
 Check out the live demo:  [RMS](https://rms-demo.vercel.app/)
 
-![Website Screenshot]("https://github.com/raul0073/saas-landing-page-template/blob/main/public/captures/full_page_capture.png")
+![Website Screenshot]("https://github.com/raul0073/saas-landing-page-template/blob/main/public/captures/full_page_capture.png?raw=true")
 
 
 ## Features
