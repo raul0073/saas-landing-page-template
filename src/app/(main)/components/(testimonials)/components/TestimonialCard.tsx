@@ -1,9 +1,25 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { TestimonialsType } from "../constants/data";
-
-function TestimonialCard({ data }: { data: TestimonialsType }) {
+function TestimonialCard({ data, i }: { data: TestimonialsType; i: number }) {
 	return (
-		<div className="shadow-lg px-8 py-12 rounded-xl border border-zinc-700/10  flex-1 mb-8">
+		<motion.div
+			initial={{
+				opacity: 0,
+				x: i % 2 === 0 ? 50 : -50,
+			}}
+			whileInView={{
+				opacity: 1,
+				x: 0, 
+				transition: {
+					duration: 1,
+					delay: (i * 0.3) - 1 
+				},
+				
+			}}
+			viewport={{ once: true }}
+			className="shadow-lg px-8 py-12 rounded-xl border border-zinc-700/10  flex-1 mb-8">
 			<p className="text-xl md:text-2xl font-normal text-zinc-700 leading-relaxed">
 				{data.text}
 			</p>
@@ -20,7 +36,7 @@ function TestimonialCard({ data }: { data: TestimonialsType }) {
 					<p className="text-xs text-gray-500">{data.title}</p>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import TestimonialsMarquee from "./components/MarqueeComp";
+import CoopsMarquee from "./components/MarqueeComp";
 import { COOPS } from "./constants/labels";
 
 function Coops() {
@@ -27,7 +27,7 @@ function Coops() {
 					{COOPS.SUB_HEADER}
 				</motion.p>
 				<div className="w-[900px]  mx-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
-					<TestimonialsMarquee />
+					<CoopsMarquee />
 				</div>
 			</div>
 		</section>

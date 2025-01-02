@@ -1,5 +1,6 @@
 export const FAQ = {
-    HEADER: "Questions?",
-    SUB_HEADER: "Frequently Asked Questions",
+    HEADER: "Get More Information",
+    HEADER2: "Questions No One Asks",
+    SUB_HEADER: "We got answers anyway.",
 
 }

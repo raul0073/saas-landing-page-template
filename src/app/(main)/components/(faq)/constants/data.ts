@@ -1,5 +1,5 @@
 
-type FAQItemType = {
+export type FAQItemType = {
     question: string,
     answer: string,
     list?: string[],

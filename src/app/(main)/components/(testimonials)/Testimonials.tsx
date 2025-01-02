@@ -29,7 +29,7 @@ function Testimonials() {
 				</div>
 				<div className="max-w-6xl mx-auto columns-1 md:columns-2 lg:columns-3 gap-4 mt-20 px-4">
 					{testimonials.map((item: TestimonialsType, i: number) => {
-						return <TestimonialCard data={item} key={i} />;
+						return <TestimonialCard data={item} key={i} i={i} />
 					})}
 				</div>
 			</div>
