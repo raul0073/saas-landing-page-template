@@ -1,4 +1,3 @@
-const url = `https://rms-demo.vercel.app`
 export const navLinks: NavigationLinkType[] = [
     { href: `#about`, label: "About" },
     { href: `#services`, label: "Services" },
